@@ -1,15 +1,30 @@
 {
   "name": "osm-dashboard",
   "version": "0.0.0",
-  "private": true,
+  "description": "",
+  "license": "MIT",
+  "contributers": [
+    {
+    "name": "Manal Albadaani",
+    "email": ""
+  }, {
+    "name": "Oshin Jacob",
+    "email": ""
+  }, {
+    "name": "Susmi Benny",
+    "email": "susmibenny1999@gmail.com"
+  }],
   "main": "app.js",
+  "homepage": "",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbenny1230/osm_dashboard.git"
+  },
+  "bugs": "https://github.com/sbenny1230/osm_dashboard/issues",
   "scripts": {
     "start": "node app.js",
     "devstart": "nodemon app.js"
-  },
-  "description": "OsmDashboard",
-  "author": {
-    "name": ""
   },
   "dependencies": {
     "body-parser": "^1.15.0",
@@ -17,10 +32,10 @@
     "debug": "^2.2.0",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.2",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "nodemon": "^1.19.4"
   }
 }
