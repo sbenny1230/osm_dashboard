@@ -1,0 +1,6 @@
+C:\Users\suzmi\OneDrive\Documents\Visual Studio 2019\Projects\OsmDashboard\OsmDashboard\obj\Debug\OsmDashboard.njsproj.AssemblyReference.cache
+C:\Users\suzmi\OneDrive\Documents\Visual Studio 2019\Projects\OsmDashboard\OsmDashboard\obj\Debug\OsmDashboard.njsproj.CoreCompileInputs.cache
+C:\Users\suzmi\OneDrive\Documents\Visual Studio 2019\Projects\OsmDashboard\OsmDashboard\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\suzmi\OneDrive\Documents\GitHub\osm_dashboard\OsmDashboard\obj\Debug\OsmDashboard.njsproj.AssemblyReference.cache
+C:\Users\suzmi\OneDrive\Documents\GitHub\osm_dashboard\OsmDashboard\obj\Debug\OsmDashboard.njsproj.CoreCompileInputs.cache
+C:\Users\suzmi\OneDrive\Documents\GitHub\osm_dashboard\OsmDashboard\bin\Microsoft.NodejsTools.WebRole.dll
