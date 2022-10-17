@@ -6,6 +6,14 @@
         <p>For use in patients with stable renal function to estimate creatinine clearance.</p>        
     </div>
 
+    <div class="container">
+        <p>
+          A progress bar:
+          <ngb-progressbar showValue="true" type="success" [value]="65">
+          </ngb-progressbar>
+        </p>
+      </div>
+
     <form [formGroup]="ccForm" (ngSubmit)="onSubmit()" class="form">
         <div class="form-group">
             <h2>Sex</h2>
