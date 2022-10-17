@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-creatinine-calculator',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatinineCalculatorComponent implements OnInit {
 
-  constructor() { }
+  ccForm = this.formBuilder.group({
+    age: '',
+    weight: '',
+    creatinine: ''
+  });
+
+  constructor(
+    private formBuilder: FormBuilder
+    ) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(): void {
+    console.log(this.ccForm.value)
   }
 
 }
