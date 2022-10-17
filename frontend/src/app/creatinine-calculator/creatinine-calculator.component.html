@@ -6,14 +6,6 @@
         <p>For use in patients with stable renal function to estimate creatinine clearance.</p>        
     </div>
 
-    <div class="container">
-        <p>
-          A progress bar:
-          <ngb-progressbar showValue="true" type="success" [value]="65">
-          </ngb-progressbar>
-        </p>
-      </div>
-
     <form [formGroup]="ccForm" (ngSubmit)="onSubmit()" class="form">
         <div class="form-group">
             <h2>Sex</h2>
@@ -29,10 +21,10 @@
             </div>
         </div>
         
-        <div class="form-group">
-            <label for="input-age" class="control-label">Age</label>
-            <input type="text" class="form-control" id="input-age" formControlName="age" placeholder="">
-        </div>
+        <mat-form-field>
+            <mat-label for="input-age" class="control-label">Age</mat-label>
+            <input matInput type="text" class="form-control" id="input-age" formControlName="age" placeholder="">
+        </mat-form-field>
     
         <div class="form-group">
             <label class="control-label">Weight</label>

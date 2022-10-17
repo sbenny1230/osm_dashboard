@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-creatinine-calculator',
@@ -16,13 +15,8 @@ export class CreatinineCalculatorComponent implements OnInit {
   });
 
   constructor(
-    private modalService: NgbModal,
     private formBuilder: FormBuilder
     ) { }
-
-  public open(modal: any): void {
-    this.modalService.open(modal);
-  }    
 
   ngOnInit(): void {
   }
