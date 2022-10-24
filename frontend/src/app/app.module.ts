@@ -6,13 +6,11 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreatinineCalculatorComponent } from './creatinine-calculator/creatinine-calculator.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CreatinineCalculatorComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +22,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, CreatinineCalculatorComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
