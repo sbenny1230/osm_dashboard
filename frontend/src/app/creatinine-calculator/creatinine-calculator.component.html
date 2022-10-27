@@ -6,36 +6,28 @@
         <p>For use in patients with stable renal function to estimate creatinine clearance.</p>        
     </div>
 
-    <form [formGroup]="ccForm" (ngSubmit)="onSubmit()" class="form">
-        <div class="form-group">
-            <h2>Sex</h2>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio-sex-female" name="radio-sex" value="F">
-                Female
-                <label class="form-check-label" for="radio-sex-female"></label>
+    <form #creatinineForm="ngForm" class="form">
+        <fieldset class="form-group">
+            <legend class="col-form-label col-sm-2 pt-0">Sex</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <label class="form-check-label" for="radio-sex-female">Female</label>                        
+                    <input class="form-check-input" type="radio" name="radio-sex" id="radio-sex-female" value="female">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="radio-sex-male">Male</label>
+                    <input class="form-check-input" type="radio" name="radio-sex" id="radio-sex-male" value="male">
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio-sex-male" name="radio-sex" value="M">
-                Male
-                <label class="form-check-label" for="radio-sex-male"></label>
-            </div>
-        </div>
-        
-        <mat-form-field>
-            <mat-label for="input-age" class="control-label">Age</mat-label>
-            <input matInput type="text" class="form-control" id="input-age" formControlName="age" placeholder="">
-        </mat-form-field>
-    
+        </fieldset>
         <div class="form-group">
-            <label class="control-label">Weight</label>
-            <input type="text" class="form-control" id="input-weight" formControlName="weight" placeholder="">
+            <label class="control-label" for="input-weight">Weight</label>
+            <input class="form-control" type="text" id="input-weight" placeholder="" [(ngModel)]="weight">
         </div>
-    
         <div class="form-group">
-            <label class="control-label">Creatinine</label>
-            <input type="text" class="form-control mb-4" id="input-creatinine" formControlName="creatinine" placeholder="">
+            <label class="control-label" for="input-creatinine">Creatinine</label>
+            <input class="form-control" type="text" id="input-creatinine" placeholder="" [(ngModel)]="creatinine">
         </div>
-
         <button type="submit" class="btn btn-primary">Calculate</button>
     </form>   
 </div>
